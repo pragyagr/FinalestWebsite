@@ -77,11 +77,19 @@
     padding: 1em;
 }
 
-.navbar-static-bottom{
-    overflow: hidden;
-    height: 400px;
-    vertical-align: bottom;
-    background-image: url("../img/bg1.jpg");
+.footer-header{
+    height: 100vh;
+    margin-bottom: -40vh;
+}
+.footer-header:after {
+  content: "";
+  display: block;
+}
+.footer-bottom, .footer-header:after {
+  height: 40vh; 
+}
+.footer-bottom{
+  background: #000044;
 }
 
 /*#page {

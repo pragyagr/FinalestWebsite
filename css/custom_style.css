@@ -27,6 +27,9 @@ body::before {
     content: 'mobile';
     display: none;
 }
+html, body{
+    height: 100%;
+}
 
 @media only screen and (min-width: 1050px) {
     body::before {
@@ -61,10 +64,13 @@ Main Components
 .cd-section #page {
     min-height: 67vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .cd-section #footer {
+    overflow: fixed ;
     height: 100vh;
+    color: #fff;
 }
 
 .cd-section:first-of-type > div {
@@ -121,7 +127,7 @@ Main Components
 [data-animation="parallax"] .cd-section:nth-of-type(3) > div,
 [data-animation="fixed"] .cd-section:nth-of-type(3) > div,
 [data-animation="opacity"] .cd-section:nth-of-type(3) > div {
-    background-color: #777;
+    background-color: #0d0d0d;
 }
 
 @media only screen and (min-width: 1050px) {
